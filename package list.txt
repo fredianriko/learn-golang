@@ -1,0 +1,14 @@
+pkg.go.dev
+
+// standar Go package list
+https://pkg.go.dev/std
+
+// list of important package I already learn
+
+- "fmt" //format text
+- "math"
+- log
+- time
+- errors
+
+

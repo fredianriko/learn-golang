@@ -1,0 +1,18 @@
+- create new directory
+- initialize go module with "go mod init (prefixname/pathname)/(description-text/repository-name)
+- create file to write go code with "name.go"
+- type
+
+  package filename
+ 
+  import "fmt"
+  
+
+  func Name(variabel datatype) datatype-to-return {
+
+	variabel := fmt.Sprintf("blabla %v, blabla", variabel)
+	return variabel
+   }
+
+// the syntax is more like objective C
+// go to step 2

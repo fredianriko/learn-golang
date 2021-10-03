@@ -1,0 +1,31 @@
+- initialize module in go: 
+
+	go mod init <prefix>/<descriptive-text>
+
+	- prefix: string that describe the module ( required for publishing the module)
+		- prefix could be:  
+			1. repository in github "github.com/<project-name>/"
+			2. name you control: good choice is company name, or any name that don't conflict with other module
+
+	- descriptive text: good choice is project name to describe functionality
+
+
+list of package names that won't be used by go (black list of package name)
+
+- test: the 'test" path prefix used for testing Go code
+- example: used as module path prefix in Go Documentation
+
+
+#how to use module from another code in another directory but in the same root directory
+
+1. go to the directory where the code are going to be use to call the module(another code as exported package)
+
+2. if you already initialize the module path, then replace with "../moduleName"
+
+	example: go mod --replace example.com/greetings=../greetings 
+
+this command gonna replace the module path, so it will be available to search by go from the root directory,
+
+3. then type ->> go mod tidy, to tidy up the package and module added to your app
+4. make sure you are now in the directory which code is going to use to call the module
+5. then type  "go run ." 

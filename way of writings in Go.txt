@@ -1,0 +1,21 @@
+
+
+#how to declare and initialize variabel in Go
+
+variabel := fmt.value
+
+the  ":=" is the way to declare and initialize a variable
+
+
+#how to write a function in Go (similiar to java)
+
+
+func FunctionName (String parameterName) (return dataType) {
+    
+    variabelName := fmt.variabelValue
+     
+    return variabelName
+}
+
+//note, if you write the function name with Capital letters in the beginning, it means that it's exported by default, it also means that this function can be 
+called by another code as a module
